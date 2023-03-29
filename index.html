@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Ayush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            box-sizing: border-box;
+            /* background-image: https://source.unsplash.com/720x600/?blue,gradient; */
+            background-image: url(https://source.unsplash.com/2160x1920/?stars-blue-night);
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            zoom: 125%;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .nav-link{
+            margin: 8px;
+            padding: 8px;
+            font-size: small;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+        }
+        #nav-link1{
+            margin-left: 400px;
+            
+        }
+        .nav-link:hover{
+            background-color: rgba(0, 140, 255, 0.6);
+        }
+        .nav-p{
+            margin-left: 30px;
+            font-size: x-large;
+            display: inline-block;
+            vertical-align: middle;
+            color: whitesmoke;
+        }
+        #nav-link6{
+            margin: 7px;
+            padding: 7px;
+            font-size: small;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            vertical-align: middle;
+            border: 1.5px solid whitesmoke;
+            box-shadow:  rgba(0, 0, 0, 0.322);
+            text-shadow:  rgba(0, 0, 0, 0.322);
+            border-radius: 5px;
+        }
+        #nav-link6:hover{
+            background-color: rgb(70, 112, 112);
+        }
+        .welcome-center{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 140px;
+            color: whitesmoke;
+            transition: 0.3s all cubic-bezier(1, 0, 0, 1);
+        }
+        .login-form{
+            display: inline-block;
+            vertical-align: middle;
+            background-color: rgba(255, 255, 255, 0.466);
+            padding: 60px;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left:240px ;
+        }
+        .in-field{
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 3px;
+            margin: 2px;
+            width: 200px;
+        }
+        .login-btn{
+            color: whitesmoke;
+            margin-top: 40px;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 12px;
+            display: inline-block;
+            padding: 8px;
+            background-color: rgba(111, 90, 230, 0.856);
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+        }
+        #login-btn1:hover{
+            background-color: rgb(60, 60, 255);
+        }
+        #login-btn2:hover{
+            background-color: rgb(60, 60, 255);
+            color: whitesmoke;
+        }
+        #login-btn2{
+            color: rgb(0, 0, 0);
+            margin-top: 40px;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 12px;
+            display: inline-block;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.671);
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .alt-logo{
+            width: 36px;
+            border-radius: 50px;
+            background-color: whitesmoke;
+            display: inline-block;
+            margin: 20px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            transition-duration: 0.3s;
+        }
+        .alt-logo:hover{
+            box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.301);
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .wc-madeby{
+            transition: letter-spacing 0.3s, text-shadow 0.3s;
+        }
+        .wc-madeby:hover{
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 4px yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><p class="nav-p">Website</p></a>
+        <a class="nav-link" id="nav-link1" href="#">Home</a>
+        <a class="nav-link" id="nav-link2" href="#">Features</a>
+        <a class="nav-link" id="nav-link3" href="#">Reviews</a>
+        <a class="nav-link" id="nav-link4" href="#">Pricing</a>
+        <a class="nav-link" id="nav-link5" href="#">FAQ</a>
+        <a class="" id="nav-link6" href="#">Get Started</a>
+    </nav>
+    <div class="welcome-center">
+        <h1 >Welcome to My <br> landing page</h1>
+        Made By- <para class="wc-madeby">Ayush Awasthi</para>
+    </div>
+    <div class="login-form">
+        <form action="">
+            <input class="in-field" type="email" placeholder=" Enter your email"><br>
+            <input class="in-field" type="password" placeholder=" Enter your Password"><br>
+            <a href="#" class="login-btn" id="login-btn1" style="margin-left: 30px;">Login</a>
+            <a href="#" class="login-btn" id="login-btn2">Signup</a>
+            <hr>
+            <p style="font-size: x-small; text-align: center;">Or continue with</p>
+            <a href=""><img class="alt-logo" src="./images/google-logo.png" alt=""></a>
+            <a href="" style="margin-left:47px ;"><img class="alt-logo" src="./images/logo-facebook.png" alt=""></a>
+        </form>
+    </div>
+
+</body>
+</html>
